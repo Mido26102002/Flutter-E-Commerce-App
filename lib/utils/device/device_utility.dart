@@ -45,19 +45,19 @@ class TDeviceUtils {
     return MediaQuery.of(Get.context!).devicePixelRatio;
   }
 
-  static double getStatusBarHeight(BuildContext context) {
+  static double getStatusBarHeight() {
     return MediaQuery.of(Get.context!).padding.top;
   }
 
-  static double getBottomNavigationBarHeight(BuildContext context) {
+  static double getBottomNavigationBarHeight() {
     return kBottomNavigationBarHeight;
   }
 
-  static double getAppBarHeight(BuildContext context) {
+  static double getAppBarHeight() {
     return kToolbarHeight;
   }
 
-  static double getKeyBoardHeight(BuildContext context) {
+  static double getKeyBoardHeight() {
     final viewInsets = WidgetsBinding.instance!.window.viewInsets;
     return viewInsets.bottom;
   }
