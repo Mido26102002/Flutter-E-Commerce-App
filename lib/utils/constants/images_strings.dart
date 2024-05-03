@@ -2,12 +2,12 @@
 
 class TImages {
   // -- App logos
-  static const String darkAppLogo = 'assets/images/app_logo_dark.png';
-  static const String lightAppLogo = 'assets/images/app_logo_light.png';
+  static const String darkAppLogo = 'assets/logos/mido-shop-black-logo.png';
+  static const String lightAppLogo = 'assets/logos/mido-shop-light-logo.png';
 
   // --Social Logos
   static const String googleLogo = 'assets/images/google_logo.png';
-  static const String facebookLogo = 'assets/images/facebook_logo.png';
+  static const String facebookLogo = 'assets/images/facebook-logo.png';
 
   // --Onboarding Images
   static const String onBoardingImage1 =

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:waflo_admin/features/authentication/controllers_onboarding/onboarding_controller.dart';
-import 'package:waflo_admin/features/authentication/screens/widgets/onboarding_dot_navigation.dart';
-import 'package:waflo_admin/features/authentication/screens/widgets/onboarding_next_button.dart';
-import 'package:waflo_admin/features/authentication/screens/widgets/onboarding_page.dart';
-import 'package:waflo_admin/features/authentication/screens/widgets/onboarding_skip.dart';
+import 'package:waflo_admin/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+import 'package:waflo_admin/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
+import 'package:waflo_admin/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
+import 'package:waflo_admin/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
+
 import 'package:waflo_admin/utils/constants/images_strings.dart';
 import 'package:waflo_admin/utils/constants/text_strings.dart';
 

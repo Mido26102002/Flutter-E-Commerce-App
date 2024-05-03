@@ -17,4 +17,21 @@ class TTexts{
   static const String homeAppbarTitle = 'Home';
   static const String homeAppbarSubTitle = 'Taimoor Sikander';
 
+  static const String loginTitle = 'Login';
+  static const String loginSubTitle = 'Welcome Back!';
+
+  static const String email = 'Email';
+  static const String password = 'Password';
+
+  static const String rememberMe = 'Remember Me';
+  static const String forgotPassword = 'Forgot Password?';
+
+  static const String signIn = 'Sign In';
+  static const String signUp = 'Sign Up';
+  static const String createAccount = 'Create Account';
+
+  static const String orSignInWith = 'Or Sign In With';
+
+  
+
 }

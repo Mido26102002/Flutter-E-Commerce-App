@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:waflo_admin/features/authentication/screens/onboarding.dart';
+import 'package:waflo_admin/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:waflo_admin/utils/theme/theme.dart';
 
 void main() {
@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       home: const OnBoardingScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
