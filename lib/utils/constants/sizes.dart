@@ -59,7 +59,7 @@ class TSizes {
 
   // Input field
   static const double inputFieldRadius = 12.0;
-  static const double spaceBtwInputField = 16.0;
+  static const double spaceBtwInputFields = 16.0;
 
 
   // Card sizes
