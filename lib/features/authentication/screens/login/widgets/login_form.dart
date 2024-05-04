@@ -5,6 +5,7 @@ import 'package:waflo_admin/features/authentication/screens/signup/signup.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
+import '../../password_configuration/forgot_password.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
@@ -50,7 +51,8 @@ class LoginForm extends StatelessWidget {
                 ),
                 // Forgot password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () =>
+                      Get.to((context) => const ForgotPasswordScreen()),
                   child: const Text(TTexts.forgotPassword),
                 )
               ],
