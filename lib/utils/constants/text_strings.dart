@@ -54,5 +54,12 @@ class TTexts{
   static const String yourAccountCreatedSubTitle =
       'Congratulations! Your Account Has Been Successfully Created!';
   
-
+  // Forgot password
+  static const String forgotPasswordTitle = 'Forgot Password';
+  static const String forgotPasswordSubTitle =
+      'Enter your email to reset your password';
+  static const String submit = 'Submit';
+  static const String changeYourPasswordTitle = 'Change Your Password';
+  static const String changeYourPasswordSubtitle = 'Enter your new password';
+  static const String done = 'Done';
 }
