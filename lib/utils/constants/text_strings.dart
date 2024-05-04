@@ -13,25 +13,46 @@ class TTexts{
   static const String onBoardingSubTitle3 = 'From Our DoorStep to Yours - Swift, Secure, and Contactless Delivery!';
 
   // -- Home
-
   static const String homeAppbarTitle = 'Home';
   static const String homeAppbarSubTitle = 'Taimoor Sikander';
 
+  //Login
+  static const String signIn = 'Sign In';
   static const String loginTitle = 'Login';
   static const String loginSubTitle = 'Welcome Back!';
-
+  static const String createAccount = 'Create Account';
+  static const String orSignInWith = 'Or Sign In With';
+  static const String rememberMe = 'Remember Me';
+  static const String forgotPassword = 'Forgot Password?';
   static const String email = 'Email';
   static const String password = 'Password';
 
-  static const String rememberMe = 'Remember Me';
-  static const String forgotPassword = 'Forgot Password?';
 
-  static const String signIn = 'Sign In';
+  //SignUp
+  static const String signUpTitle = 'Let\'s create your account';
+  static const String signUpSubTitle = 'Create an Account!';
   static const String signUp = 'Sign Up';
-  static const String createAccount = 'Create Account';
+  static const String firstName = 'First Name';
+  static const String lastName = 'Last Name';
+  static const String username = 'Username';
+  static const String phoneNo = 'Phone Number';
+  static const String iAgreeTo = 'I agree to';
+  static const String privacyPolicy = 'Privacy Policy';
+  static const String and = 'and';
+  static const String termOfUse = 'Term of Use';
 
-  static const String orSignInWith = 'Or Sign In With';
-
+  // Email
+  static const String confirmEmail = 'Verify your email address';
+  static const String confirmMailSubTitle =
+      'Congratulations! Your Account Awaits: Verify Your Email Address to Get Started!';
+  static const String emailNoReceivedMesage =
+      'Didn\'t get the email ? Check your junk/spam or resend it';
+  static const String resendEmail = 'Resend Email';
+  static const String tContinue = 'Continue';
+  static const String yourAccountCreatedTitle =
+      'Your Account Created Successfully!';
+  static const String yourAccountCreatedSubTitle =
+      'Congratulations! Your Account Has Been Successfully Created!';
   
 
 }
