@@ -16,4 +16,18 @@ class TImages {
       'assets/images/on_boarding_images/sammy-line-woman-in-shopping-cart-placing-order-on-smartphone.gif';
   static const String onBoardingImage3 =
       'assets/images/on_boarding_images/sammy-line-man-and-dog-delivering-packages-on-a-moped.gif';
+
+  // --Animations
+  static const String productIllustration =
+      'assets/images/animations/sammy-line-remote-work.gif';
+  static const String productSaleIllustration =
+      'assets/images/animations/sammy-line-lettering-big-sale-with-a-man-pushing-a-shopping-cart.png';
+  static const String staticSucessIllustration =
+      'assets/images/animations/sammy-line-man-and-woman-high-fiving-each-other.png';
+  static const String deliveryInPlaneIllustration =
+      'assets/images/animations/sammy-line-come-back-later.png';
+  static const String deliveryMailIllustration =
+      'assets/images/animations/sammy-line-man-receives-a-mail.png';
+  static const String verifyIllustration =
+      'assets/images/animations/sammy-line-backpack-camera-and-map-for-travel.gif';
 }
