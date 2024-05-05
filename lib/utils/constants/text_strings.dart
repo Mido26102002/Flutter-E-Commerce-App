@@ -62,4 +62,8 @@ class TTexts{
   static const String changeYourPasswordTitle = 'Change Your Password';
   static const String changeYourPasswordSubtitle = 'Enter your new password';
   static const String done = 'Done';
+
+  // HomeScreen
+  static const String homeAppBarTitle = 'Home';
+  static const String homeAppBarSubTitle = 'Taimoor Sikander';
 }

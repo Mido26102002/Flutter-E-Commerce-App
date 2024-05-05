@@ -3,7 +3,7 @@
 class TImages {
   // -- App logos
   static const String darkAppLogo = 'assets/logos/mido-shop-black-logo.png';
-  static const String lightAppLogo = 'assets/logos/mido-shop-light-logo.png';
+  static const String lightAppLogo = 'assets/logos/mido-shop-white-logo.png';
 
   // --Social Logos
   static const String googleLogo = 'assets/images/google_logo.png';
