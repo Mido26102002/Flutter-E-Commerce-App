@@ -27,6 +27,7 @@ dependencies:
   url_launcher: ^6.1.8
   flutter_native_splash: ^2.1.6
   smooth_page_indicator: ^1.1.0
+  carousel_slider: ^4.2.1
 
   # State Management
   get: ^4.6.5
@@ -56,3 +57,6 @@ flutter:
     - google_fonts/
     - assets/images/on_boarding_images/
     - assets/images/animations/
+    - assets/icons/categories/
+    - assets/images/products/
+    - assets/images/banners/
