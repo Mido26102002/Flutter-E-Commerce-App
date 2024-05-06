@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:waflo_admin/common/widgets/appbar/appbar.dart';
+import 'package:waflo_admin/common/widgets/products/products_card/product_card_vertical.dart';
 import 'package:waflo_admin/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:waflo_admin/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:waflo_admin/features/shop/screens/home/widgets/promo_slider.dart';
+import 'package:waflo_admin/features/shop/screens/home/widgets/search_container.dart';
+import 'package:waflo_admin/utils/constants/images_strings.dart';
 
 import '../../../../common/widgets/custome_shapes/containers/primary_header_container.dart';
-import '../../../../common/widgets/products/cart_menu_icon.dart';
-import '../../../../utils/constants/colors.dart';
-import '../../../../utils/constants/text_strings.dart';
+import '../../../../common/widgets/layouts/grid_layout_product.dart';
+import '../../../../common/widgets/texts/section_heading.dart';
+import '../../../../utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -17,19 +20,75 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             PrimaryHeaderContainer(
-                child: Column(
-              children: const [
-                // Appar
-                HomeAppBar(),
+              child: Column(
+                children: [
+                  // Appar
+                  const HomeAppBar(),
+                  const SizedBox(height: TSizes.spaceBtwSections),
 
-                //Search Bar
+                  //Search Bar
 
-                // Categories
-              ],
-            )),
+                  const SearchContainer(text: 'Search'),
+                  const SizedBox(height: TSizes.spaceBtwSections),
+
+                  // Categories
+                  Padding(
+                    padding: const EdgeInsets.only(left: TSizes.defaultSpace),
+                    child: Column(
+                      children: const [
+                        // Heading
+
+                        SectionHeadingBar(
+                          title: 'Popular Categories',
+                          showActionButton: false,
+                        ),
+                        SizedBox(height: TSizes.spaceBtwItems),
+
+                        //Categories
+                        HomeCategories()
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            // Body
+            Padding(
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              child: Column(
+                children: [
+                  const PromoSlider(
+                    banners: [
+                      TImages.promoBanner1,
+                      TImages.promoBanner2,
+                      TImages.promoBanner3
+                    ],
+                  ),
+                  const SizedBox(height: TSizes.spaceBtwSections),
+
+                  // Heading
+                  const SectionHeadingBar(title: 'Popular Products'),
+                  const SizedBox(height: TSizes.spaceBtwItems),
+
+                  // Popular Products
+                  GridLayOutProduct(
+                    itemCount: 2,
+                    itemBuilder: (_, index) => const ProductCardVertical(),
+                  ),
+                ],
+              ),
+            ),
+
           ],
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
