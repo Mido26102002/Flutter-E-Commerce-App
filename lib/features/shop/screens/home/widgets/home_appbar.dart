@@ -19,15 +19,8 @@ class HomeAppBar extends StatelessWidget {
             TTexts.homeAppBarTitle,
             style: Theme.of(context)
                 .textTheme
-                .labelMedium!
-                .apply(color: TColors.grey),
-          ),
-          Text(
-            TTexts.homeAppBarSubTitle,
-            style: Theme.of(context)
-                .textTheme
-                .labelMedium!
-                .apply(color: TColors.grey),
+                .headlineMedium!
+                .apply(color: TColors.white),
           ),
         ],
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:waflo_admin/features/shop/screens/Store/store_screen.dart';
 import 'package:waflo_admin/features/shop/screens/home/home.dart';
 import 'package:waflo_admin/utils/constants/colors.dart';
 import 'package:waflo_admin/utils/helpers/helper_functions.dart';
@@ -49,7 +50,7 @@ class NavigtaionController extends GetxController {
 
   final screens = [
     const HomeScreen(),
-    Container(color: Colors.green),
+    const CreateStoreScreen(),
     Container(color: Colors.purple),
     Container(color: Colors.orange),
     Container(color: Colors.blue)
