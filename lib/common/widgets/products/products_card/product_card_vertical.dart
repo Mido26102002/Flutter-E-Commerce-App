@@ -4,6 +4,7 @@ import 'package:waflo_admin/common/styles/shadows.dart';
 import 'package:waflo_admin/common/widgets/containers/rounded_container.dart';
 import 'package:waflo_admin/common/widgets/icons/circular_icon.dart';
 import 'package:waflo_admin/common/widgets/images/rounded_image.dart';
+import 'package:waflo_admin/common/widgets/texts/brand_title_text_with_verified_icon.dart';
 import 'package:waflo_admin/common/widgets/texts/product_title_text.dart';
 import 'package:waflo_admin/utils/constants/sizes.dart';
 import 'package:waflo_admin/utils/helpers/helper_functions.dart';
@@ -76,24 +77,11 @@ class ProductCardVertical extends StatelessWidget {
               padding: const EdgeInsets.only(left: TSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const ProductTitleText(
+                children: const [
+                  ProductTitleText(
                       title: 'Green Nike Air Shoes', smallSize: true),
-                  const SizedBox(height: TSizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text('Nike',
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 1,
-                          style: Theme.of(context).textTheme.labelMedium),
-                      const SizedBox(width: TSizes.xs),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: TColors.primary,
-                        size: TSizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  SizedBox(height: TSizes.spaceBtwItems / 2),
+                  BrandTitleTextWithVerifiedIcon(title: 'Nike')
                 ],
               ),
             ),
