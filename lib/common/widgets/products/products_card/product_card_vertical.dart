@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:waflo_admin/common/styles/shadows.dart';
 import 'package:waflo_admin/common/widgets/containers/rounded_container.dart';
@@ -9,6 +10,7 @@ import 'package:waflo_admin/common/widgets/texts/product_title_text.dart';
 import 'package:waflo_admin/utils/constants/sizes.dart';
 import 'package:waflo_admin/utils/helpers/helper_functions.dart';
 
+import '../../../../features/shop/screens/product_details/product_details.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/images_strings.dart';
 import '../../texts/product_price_text.dart';
@@ -20,7 +22,7 @@ class ProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetailScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),

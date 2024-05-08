@@ -49,6 +49,8 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                  const SizedBox(height: TSizes.spaceBtwSections),
+
                 ],
               ),
             ),
@@ -79,7 +81,6 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-
           ],
         ),
       ),

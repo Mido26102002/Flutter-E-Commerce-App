@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart%20';
 
 import '../../../../../common/widgets/image_text_widgets/vertical_image_text.dart';
+import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/images_strings.dart';
 
 class HomeCategories extends StatelessWidget {
@@ -21,6 +22,7 @@ class HomeCategories extends StatelessWidget {
               image: TImages.shoesIcon,
               title: 'Shoes',
               onTap: () {},
+              backgroundColor: TColors.white,
             );
           }),
     );

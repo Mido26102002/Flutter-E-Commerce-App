@@ -58,6 +58,9 @@ class TImages {
   static const String promoBanner3 =
       'assets/images/products/promo-banner-3.png';
 
+  // Profile Screen
+  static const String user = 'assets/images/content/user.png';
+
   //Products
   static const String productImage1 = 'assets/images/products/acer_laptop_1.png';
   static const String productImage2 = 'assets/images/products/acer_laptop_2.png';

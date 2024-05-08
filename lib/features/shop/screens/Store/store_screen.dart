@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:waflo_admin/common/widgets/products/cart_menu_icon.dart';
 import 'package:waflo_admin/common/widgets/texts/section_heading.dart';
-import 'package:waflo_admin/features/shop/screens/Store/widgets/brand_card.dart';
+import 'package:waflo_admin/common/widgets/brands/brand_card.dart';
 import 'package:waflo_admin/features/shop/screens/Store/widgets/category_tab.dart';
 import 'package:waflo_admin/features/shop/screens/home/widgets/search_container.dart';
 import 'package:waflo_admin/utils/constants/sizes.dart';

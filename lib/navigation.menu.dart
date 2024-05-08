@@ -3,8 +3,11 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:waflo_admin/features/shop/screens/Store/store_screen.dart';
 import 'package:waflo_admin/features/shop/screens/home/home.dart';
+import 'package:waflo_admin/features/shop/screens/profile/profile_screen.dart';
 import 'package:waflo_admin/utils/constants/colors.dart';
 import 'package:waflo_admin/utils/helpers/helper_functions.dart';
+
+import 'features/shop/screens/Wishlist/wish_list.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({Key? key}) : super(key: key);
@@ -51,8 +54,8 @@ class NavigtaionController extends GetxController {
   final screens = [
     const HomeScreen(),
     const CreateStoreScreen(),
-    Container(color: Colors.purple),
-    Container(color: Colors.orange),
+    const CreateWishListSCreen(),
+    const CreateProfileScreen(),
     Container(color: Colors.blue)
   ];
 }
