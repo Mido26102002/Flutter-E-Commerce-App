@@ -9,6 +9,7 @@ class SectionHeadingBar extends StatelessWidget {
     this.onPressed,
     this.showActionButton = true,
   }) : super(key: key);
+  
   final Color? textColor;
   final bool showActionButton;
   final String title;
