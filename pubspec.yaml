@@ -34,6 +34,7 @@ dependencies:
   get_storage: ^2.1.1
   tiengviet: ^1.0.0
   readmore: ^2.2.0
+  flutter_rating_bar: ^4.0.1
   
 
 dev_dependencies:
@@ -63,3 +64,4 @@ flutter:
     - assets/images/products/
     - assets/images/banners/
     - assets/images/content/
+    - assets/images/reviews/

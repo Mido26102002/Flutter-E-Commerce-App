@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 import 'package:waflo_admin/common/widgets/texts/section_heading.dart';
@@ -10,6 +11,7 @@ import 'package:waflo_admin/features/shop/screens/product_details/widgets/produc
 import 'package:waflo_admin/features/shop/screens/product_details/widgets/rating_share_widget.dart';
 
 import '../../../../utils/constants/sizes.dart';
+import '../product_reviews/product_reviews.dart';
 
 class ProductDetailScreen extends StatelessWidget {
   const ProductDetailScreen({Key? key}) : super(key: key);
@@ -70,8 +72,8 @@ class ProductDetailScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        SectionHeadingBar(title: 'Review(199)', onPressed: (){}, showActionButton: false),
-                        IconButton(icon: const Icon(Iconsax.arrow_right_3, size: 18), onPressed: (){}),
+                        const SectionHeadingBar(title: 'Review(199)', showActionButton: false),
+                        IconButton(icon: const Icon(Iconsax.arrow_right_3, size: 18), onPressed: ()=> Get.to(() => const ProductReviewScreen())),
                       ],
                     ),
                     const SizedBox(height: TSizes.spaceBtwSections),
