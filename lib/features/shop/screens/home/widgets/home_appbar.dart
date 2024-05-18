@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart%20';
+import 'package:get/get.dart';
+import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:waflo_admin/common/widgets/appbar/appbar.dart';
 
 import '../../../../../common/widgets/products/cart_menu_icon.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/text_strings.dart';
+import '../../cart/cart.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({
@@ -25,7 +28,12 @@ class HomeAppBar extends StatelessWidget {
         ],
       ),
       actions: [
-        CartCounterIcon(onPressed: () {}, iconColor: TColors.white),
+        CartCounterIcon(
+          onPressed: () {}, 
+          iconColor: TColors.white, 
+          counterBgColor: TColors.black, 
+          counterTextColor: TColors.white
+        ),
       ],
     );
   }
