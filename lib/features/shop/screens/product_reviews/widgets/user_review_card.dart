@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:readmore/readmore.dart';
 import 'package:waflo_admin/common/widgets/containers/rounded_container.dart';
 import 'package:waflo_admin/common/widgets/products/ratings/rating_indicator_v1.dart';
@@ -45,14 +44,14 @@ class UserReviewCard extends StatelessWidget {
           ],
         ),
         const SizedBox(height: TSizes.spaceBtwItems),
-        ReadMoreText(
+        const ReadMoreText(
           'Giày đẹp chất lượng cao lắm nha',
           trimLines: 2,
           trimMode: TrimMode.Line,
           trimExpandedText: ' Show less',
           trimCollapsedText: ' Show more',
-          moreStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),
-          lessStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),  
+          moreStyle:  TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),
+          lessStyle:  TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),  
         ),
         const SizedBox(height: TSizes.spaceBtwItems),
 
@@ -72,14 +71,14 @@ class UserReviewCard extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: TSizes.spaceBtwItems),
-                ReadMoreText(
+                const ReadMoreText(
                   'Giày đẹp chất lượng cao lắm nha',
                   trimLines: 2,
                   trimMode: TrimMode.Line,
                   trimExpandedText: ' Show less',
                   trimCollapsedText: ' Show more',
-                  moreStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),
-                  lessStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),  
+                  moreStyle:  TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),
+                  lessStyle:  TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: TColors.primary),  
                 ),                
               ],
             )

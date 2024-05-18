@@ -60,7 +60,7 @@ class ProfileSettingScreen extends StatelessWidget {
               ProfileSettingMenu(title: 'Gender', value: 'Male', onPressed: () {}),
               ProfileSettingMenu(title: 'Date of Birth', value: '26 Oct 2002', onPressed: () {}),
               const Divider(),
-              const SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwItems), 
 
 
               Center(
