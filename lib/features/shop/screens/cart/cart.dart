@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:waflo_admin/common/widgets/appbar/appbar.dart';
-import 'package:waflo_admin/common/widgets/texts/product_price_text.dart';
+import 'package:waflo_admin/features/shop/screens/cart/widgets/cart_item_view.dart';
 
-import '../../../../common/widgets/products/cart/add_remove_button.dart';
-import '../../../../common/widgets/products/cart/cart_item.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
+import '../checkout/checkout_screen.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({Key? key}) : super(key: key);
@@ -17,7 +17,7 @@ class CartScreen extends StatelessWidget {
         padding: const EdgeInsets.all(TSizes.defaultSpace),
         child: ElevatedButton(
           child: const Text('Checkout 250.000 đ'),
-          onPressed: () {},
+          onPressed: () => Get.to(() => const CheckOutScreen()),
           style: ElevatedButton.styleFrom(
             primary: TColors.primary,
           ),
@@ -27,34 +27,11 @@ class CartScreen extends StatelessWidget {
         title: Text('Cart', style: Theme.of(context).textTheme.headlineMedium),
         showBackArrow: true,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(TSizes.defaultSpace),
-        child: ListView.separated(
-          separatorBuilder: (_,__) => const SizedBox(height: TSizes.spaceBtwSections),
-          itemCount: 10,
-          shrinkWrap: true,
-          itemBuilder: (_, index) => Column (
-            children: [
-              const CartItem(),
-              const SizedBox(height: TSizes.spaceBtwItems),
+      body: const Padding(
+        padding:  EdgeInsets.all(TSizes.defaultSpace),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: const [
-                      //Extra space
-                      SizedBox(width: 70),
-                      // Add Remove Button
-                      ProductQuantityWithAddRemoveButton(),
-                    ],
-                  ),
-                  const ProductPriceText(price: '250.000'),
-                ],
-              )
-            ],
-          )
-        ),
+        // Items In cart
+        child:  CartItemView()
       ),
     );
   }
