@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart%20';
-import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:waflo_admin/common/widgets/appbar/appbar.dart';
 
-import '../../../../../common/widgets/products/cart_menu_icon.dart';
+import '../../../../../common/widgets/products/cart/cart_menu_icon.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/text_strings.dart';
-import '../../cart/cart.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({

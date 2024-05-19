@@ -13,13 +13,13 @@ class CircularIcon extends StatelessWidget {
     required this.icon,
     this.color,
     this.backgroundColor,
-    required this.onPressed,
+    this.onPressed,
   }) : super(key: key);
   final double? width, height, size;
   final IconData icon;
   final Color? color;
   final Color? backgroundColor;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {

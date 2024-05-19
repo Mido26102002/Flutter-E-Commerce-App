@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:waflo_admin/utils/constants/colors.dart';
 
-import '../../../features/shop/screens/cart/cart.dart';
-import '../../../utils/helpers/helper_functions.dart';
+import '../../../../features/shop/screens/cart/cart.dart';
+import '../../../../utils/helpers/helper_functions.dart';
 
 class CartCounterIcon extends StatelessWidget {
   const CartCounterIcon({
