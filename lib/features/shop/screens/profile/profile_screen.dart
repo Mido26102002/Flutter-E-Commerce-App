@@ -6,6 +6,7 @@ import 'package:waflo_admin/common/widgets/list_titles/setting_menu_tile.dart';
 import 'package:waflo_admin/common/widgets/texts/section_heading.dart';
 import 'package:waflo_admin/features/personalization/screens/address/address.dart';
 import 'package:waflo_admin/features/personalization/screens/profile_setting/profile_setting.dart';
+import 'package:waflo_admin/features/shop/screens/order/order.dart';
 
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/list_titles/user_profile_tile.dart';
@@ -73,7 +74,7 @@ class CreateProfileScreen extends StatelessWidget {
                   icon: Iconsax.bag_tick,
                   title: 'My Orders',
                   subtitle: 'In-progress and Completed orders',
-                  onTap: () {},
+                  onTap: () => Get.to(() => const OrderScreen()),
                 ),
                 SettingMenuTile(
                   icon: Iconsax.bank,
