@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart%20';
+import 'package:get/get.dart';
+import 'package:waflo_admin/features/shop/screens/sub_catogory/sub_catogories.dart';
 
 import '../../../../../common/widgets/image_text_widgets/vertical_image_text.dart';
 import '../../../../../utils/constants/colors.dart';
@@ -21,7 +23,7 @@ class HomeCategories extends StatelessWidget {
             return VerticalImageText(
               image: TImages.shoesIcon,
               title: 'Shoes',
-              onTap: () {},
+              onTap: () => Get.to(() => const SubCategoriesScreen()),
               backgroundColor: TColors.white,
             );
           }),

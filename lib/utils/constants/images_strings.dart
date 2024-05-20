@@ -57,6 +57,12 @@ class TImages {
       'assets/images/products/promo-banner-2.png';
   static const String promoBanner3 =
       'assets/images/products/promo-banner-3.png';
+  static const String promoBanner4 = 'assets/images/banners/banner_4.jpg';
+  static const String promoBanner5 = 'assets/images/banners/banner_5.jpg';
+  static const String promoBanner6 = 'assets/images/banners/banner_6.jpg';
+
+  
+
 
   // Profile Screen
   static const String user = 'assets/images/content/user.png';
